@@ -14,6 +14,7 @@
     padding: 20px 50px;
     z-index: 10;
 }
+
 .navbar h1 {
     color: white;
 }
@@ -99,15 +100,6 @@
     border: 5px solid white;
 }
 
-.vertical-text {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: rotate(90deg);
-    color: white;
-    font-size: 12px;
-}
-
 /* PAGE */
 .page {
     background: black;
@@ -138,7 +130,9 @@
 /* ===================== */
 @media (max-width: 768px) {
 
+    /* NAVBAR */
     .navbar {
+        position: relative;
         flex-direction: column;
         align-items: center;
         padding: 15px;
@@ -149,45 +143,57 @@
         font-size: 14px;
     }
 
+    /* HERO */
     .hero {
         flex-direction: column;
         height: auto;
     }
 
+    /* KIRI */
     .hero-left {
         width: 100%;
-        padding: 60px 20px;
+        padding: 40px 20px;
         text-align: center;
     }
 
     .hero-left h1 {
-        font-size: 60px;
+        font-size: 45px;
+        line-height: 1.1;
     }
 
+    .line {
+        margin: 15px auto;
+    }
+
+    /* KANAN */
     .hero-right {
         width: 100%;
-        height: 400px;
+        height: 250px;
     }
 
+    .main-img {
+        height: 100%;
+    }
+
+    /* NAMA */
     .name {
-        font-size: 18px;
-        bottom: 80px;
-        left: 20px;
+        font-size: 16px;
+        bottom: 50px;
+        left: 15px;
     }
 
+    /* FOTO KECIL */
     .small-img {
-        width: 120px;
+        width: 90px;
     }
 
-    .vertical-text {
-        display: none;
-    }
-
+    /* PAGE */
     .page {
-        padding: 100px 20px;
+        padding: 80px 20px;
         text-align: center;
     }
 
+    /* GRID */
     .grid {
         grid-template-columns: 1fr;
     }
